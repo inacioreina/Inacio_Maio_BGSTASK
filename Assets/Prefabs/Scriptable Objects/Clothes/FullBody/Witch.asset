@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
+  m_Name: Witch
+  m_EditorClassIdentifier: 
+  Name: Noita
+  Type: 0
+  Icon: {fileID: 0}
+  EquippedCharacterSprite: {fileID: 0}
+  Price: 95
+  ModulateColour: 0
+  Colour: {r: 0, g: 0, b: 0, a: 0}
+  NorthSprites:
+  - {fileID: 1826671622, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -1507625152, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -1554011060, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -920338689, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -2042422895, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -1809976509, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -215618701, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -322653679, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  EastSprites:
+  - {fileID: -1619081916, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: 410552157, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: 1565577373, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -1830420848, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: 442534302, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: 2016601348, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -374095321, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: 1438747610, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  SouthSprites:
+  - {fileID: -734369409, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: 1005486108, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: 88838848, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -1140612283, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -648367637, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -1599450456, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -1406616617, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
+  - {fileID: -703942102, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}

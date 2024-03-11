@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
+  m_Name: Pants
+  m_EditorClassIdentifier: 
+  Name: Pants
+  Type: 3
+  Icon: {fileID: 0}
+  EquippedCharacterSprite: {fileID: 0}
+  Price: 0
+  colour: {r: 0, g: 0, b: 0, a: 0}
+  NorthSprites:
+  - {fileID: -1239474467, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: -1581977167, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: -1595013216, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 1986985613, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 450117836, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 904600602, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 81287806, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: -1911230426, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  EastSprites:
+  - {fileID: -1942298169, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: -1542312444, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 204945960, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 101508512, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 107240146, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 727200349, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 1913018541, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 1671573242, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  SouthSprites:
+  - {fileID: -1013082916, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 1596430892, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: -843642104, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 1351868288, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 761884438, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 1203070558, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: -2059959939, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}
+  - {fileID: 433634201, guid: 4fa0294baee1227499bc1f80ad39173f, type: 3}

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
+  m_Name: Suit
+  m_EditorClassIdentifier: 
+  Name: Suit
+  Type: 2
+  Icon: {fileID: 0}
+  EquippedCharacterSprite: {fileID: 0}
+  Price: 100
+  colour: {r: 0, g: 0, b: 0, a: 0}
+  NorthSprites:
+  - {fileID: -1298856764, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 1747026963, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 466026261, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 1039628097, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -327295517, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -140223701, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -453962178, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -1417080245, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  EastSprites:
+  - {fileID: -1168430760, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 508733487, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 1881655213, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 123390257, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 804007946, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -1222272921, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -1437166274, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 1235579320, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  SouthSprites:
+  - {fileID: -798941315, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -333221476, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -1205173320, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 2053334691, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -902123204, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 526183097, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: -161146847, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
+  - {fileID: 580003106, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
+  m_Name: Basic
+  m_EditorClassIdentifier: 
+  Name: Shirt
+  Type: 2
+  Icon: {fileID: 0}
+  EquippedCharacterSprite: {fileID: 0}
+  Price: 5
+  colour: {r: 0, g: 0, b: 0, a: 0}
+  NorthSprites:
+  - {fileID: 94307388, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -272596126, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -1656435718, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -1297208590, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -1304498941, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 1711011131, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 61577178, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -355283147, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  EastSprites:
+  - {fileID: -600825855, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -1379558205, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 800204868, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 1696153578, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -1659527012, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -370847064, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 775504824, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -789528939, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  SouthSprites:
+  - {fileID: 548675794, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -176865169, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 1336636368, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -52335080, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 94554208, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: -454749231, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 159799889, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
+  - {fileID: 550793309, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}

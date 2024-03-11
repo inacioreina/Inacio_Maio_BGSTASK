@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
+  m_Name: Clown
+  m_EditorClassIdentifier: 
+  Name: Clown Outfit
+  Type: 0
+  Icon: {fileID: 0}
+  EquippedCharacterSprite: {fileID: 0}
+  Price: 25
+  ModulateColour: 0
+  Colour: {r: 0, g: 0, b: 0, a: 0}
+  NorthSprites:
+  - {fileID: -286431352, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 1735377709, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -1784749329, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -1448786173, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -1524613558, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -519478040, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 1400830604, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -1316812125, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  EastSprites:
+  - {fileID: 1023684016, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 2036210466, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 510734692, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 437289832, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 1972501997, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 406194590, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 1818861788, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -1175990789, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  SouthSprites:
+  - {fileID: -965167243, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -118593869, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -356376467, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -1329780503, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -20224087, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: -701863219, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 1953906397, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
+  - {fileID: 996308803, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}

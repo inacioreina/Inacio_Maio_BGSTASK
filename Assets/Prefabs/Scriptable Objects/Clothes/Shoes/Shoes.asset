@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
+  m_Name: Shoes
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 4
+  Icon: {fileID: 0}
+  EquippedCharacterSprite: {fileID: 0}
+  Price: 0
+  colour: {r: 0, g: 0, b: 0, a: 0}
+  NorthSprites:
+  - {fileID: -2034769467, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -1191317689, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -1452509047, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -129839396, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 659950134, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1908826201, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -1454593357, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1710727489, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  EastSprites:
+  - {fileID: -1978254956, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1178926236, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1726900976, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1536496396, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1523760431, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -1952557714, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1377863958, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -326839771, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  SouthSprites:
+  - {fileID: 1582818637, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1621962438, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1207831777, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -1976539665, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -1241650403, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -1654727938, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: 1625770846, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}
+  - {fileID: -1395256364, guid: 05b6f1e7a1389bc4ca43d25c5df85dda, type: 3}

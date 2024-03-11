@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
+  m_Name: Sailor
+  m_EditorClassIdentifier: 
+  Name: Sailor Moon
+  Type: 2
+  Icon: {fileID: 0}
+  EquippedCharacterSprite: {fileID: 0}
+  Price: 65
+  ModulateColour: 0
+  Colour: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 0}
+  NorthSprites:
+  - {fileID: -647203831, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: 1146630314, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -1497339463, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -977732513, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: 1398147118, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -654909434, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -1104959831, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: 757228970, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  EastSprites:
+  - {fileID: 312288755, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: 312042905, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -475741000, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: 1003674859, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -2063586682, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -837297853, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: 174187166, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -1954725149, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  SouthSprites:
+  - {fileID: 1110520900, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: 357155337, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -2055932886, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -1989897224, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -847876391, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -1488565774, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: 304117512, guid: 4948011036811a449abceedd25a9ad43, type: 3}
+  - {fileID: -898053615, guid: 4948011036811a449abceedd25a9ad43, type: 3}

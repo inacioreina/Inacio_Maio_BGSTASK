@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
+  m_Name: Overalls
+  m_EditorClassIdentifier: 
+  Name: Overalls
+  Type: 2
+  Icon: {fileID: 0}
+  EquippedCharacterSprite: {fileID: 0}
+  Price: 15
+  colour: {r: 0, g: 0, b: 0, a: 0}
+  NorthSprites:
+  - {fileID: -1397674011, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 1352230444, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 1580356488, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -269019645, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 425657593, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 1698796157, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 1430383501, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 963658513, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  EastSprites:
+  - {fileID: -403978783, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 218942038, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -776536007, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 544786832, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -344438571, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 1936791841, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -391561452, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -1236318134, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  SouthSprites:
+  - {fileID: 1962593982, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -1903088789, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -375309387, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -1094500166, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 1574002425, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 1461678004, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: -692281447, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
+  - {fileID: 463374865, guid: fef38e3646c40e245a64e043c176cabb, type: 3}
