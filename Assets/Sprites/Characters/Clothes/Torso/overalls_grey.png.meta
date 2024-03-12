@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4701,12 +4701,12 @@ TextureImporter:
       overalls_grey_95: -712259883
       overalls_grey_47: 856073715
       overalls_grey_86: 1140913925
-      overalls_grey_110: 992810129
       overalls_grey_210: -918154797
-      overalls_grey_150: -1037283949
-      overalls_grey_164: -332614630
-      overalls_grey_173: -1010653904
       overalls_grey_14: 1430383501
+      overalls_grey_173: -1010653904
+      overalls_grey_164: -332614630
+      overalls_grey_150: -1037283949
+      overalls_grey_110: 992810129
       overalls_grey_75: -24923988
       overalls_grey_192: 1224063498
       overalls_grey_82: -1892747700

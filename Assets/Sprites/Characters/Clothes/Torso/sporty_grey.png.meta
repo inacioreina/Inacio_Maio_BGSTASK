@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4700,11 +4700,12 @@ TextureImporter:
       sporty_grey_94: 1675992857
       sporty_grey_79: 1062909901
       sporty_grey_179: -2139720063
-      sporty_grey_6: -2070442433
       sporty_grey_97: -437719310
+      sporty_grey_51: -1689516983
       sporty_grey_45: 1831999083
       sporty_grey_78: -425347998
       sporty_grey_174: -447004240
+      sporty_grey_6: -2070442433
       sporty_grey_103: -143251564
       sporty_grey_2: 1585704816
       sporty_grey_41: -1971382097
@@ -4715,7 +4716,6 @@ TextureImporter:
       sporty_grey_192: -1102860024
       sporty_grey_20: -128164909
       sporty_grey_101: -255685481
-      sporty_grey_51: -1689516983
       sporty_grey_118: 1433049558
       sporty_grey_203: 868062201
       sporty_grey_22: 2033884452

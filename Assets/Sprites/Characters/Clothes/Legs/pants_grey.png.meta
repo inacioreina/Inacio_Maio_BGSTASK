@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4470,8 +4470,8 @@ TextureImporter:
       pants_grey_200: -374379185
       pants_grey_127: -1683313412
       pants_grey_126: 1418888976
-      pants_grey_113: -577729766
       pants_grey_43: -250739739
+      pants_grey_95: 1104186749
       pants_grey_103: 204265509
       pants_grey_161: -773233416
       pants_grey_67: 123872580
@@ -4481,7 +4481,7 @@ TextureImporter:
       pants_grey_141: 1709778455
       pants_grey_21: 727200349
       pants_grey_25: 1203965301
-      pants_grey_95: 1104186749
+      pants_grey_113: -577729766
       pants_grey_39: -834673242
       pants_grey_22: 1913018541
       pants_grey_201: 1178798123

@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -9088,9 +9088,9 @@ TextureImporter:
       clown_245: -231499906
       clown_144: -1857734816
       clown_165: -1786746811
-      clown_219: -1947264405
       clown_333: -391634317
       clown_206: -809907478
+      clown_219: -1947264405
       clown_310: 112172557
       clown_244: -1931543559
       clown_274: -222223656
@@ -9111,6 +9111,7 @@ TextureImporter:
       clown_123: -2046319693
       clown_236: 1584828644
       clown_299: 1795036187
+      clown_340: -314301459
       clown_168: 2111263720
       clown_319: 2022330382
       clown_324: -661255409
@@ -9118,7 +9119,6 @@ TextureImporter:
       clown_118: 907819122
       clown_139: 454403783
       clown_160: 1777783643
-      clown_340: -314301459
       clown_71: -320554502
       clown_22: 1400830604
       clown_416: -798190722
@@ -9181,8 +9181,8 @@ TextureImporter:
       clown_199: -257429867
       clown_169: -1847158547
       clown_350: 410694937
-      clown_266: 328629270
       clown_357: -1982151745
+      clown_266: 328629270
       clown_297: -1649662653
       clown_14: -1108781951
       clown_282: -891357703
@@ -9192,10 +9192,10 @@ TextureImporter:
       clown_131: 1920982585
       clown_208: -2051187909
       clown_146: -1767368629
-      clown_356: 1577688124
-      clown_159: 1195795350
-      clown_196: -49673347
       clown_421: 1120754165
+      clown_159: 1195795350
+      clown_356: 1577688124
+      clown_196: -49673347
       clown_413: 1633524318
       clown_127: -1193130657
       clown_101: 1916840864
@@ -9316,13 +9316,12 @@ TextureImporter:
       clown_32: 1023684016
       clown_170: 219060052
       clown_86: -1811144647
+      clown_402: 151360411
       clown_95: -2146330984
-      clown_217: -1701083827
       clown_4: -20224087
       clown_204: 263404803
-      clown_347: 1514571421
+      clown_217: -1701083827
       clown_418: -926361551
-      clown_402: 151360411
       clown_18: -1784749329
       clown_136: -412135683
       clown_242: -1813769070
@@ -9331,6 +9330,7 @@ TextureImporter:
       clown_37: 406194590
       clown_283: -1541259548
       clown_290: 1078273653
+      clown_347: 1514571421
       clown_64: -548200459
       clown_65: 261500640
       clown_12: -1671270061
@@ -9338,11 +9338,11 @@ TextureImporter:
       clown_399: -1889286755
       clown_345: -456679911
       clown_220: 1924999071
-      clown_289: 1477290016
       clown_78: 664612686
       clown_292: 1327007965
-      clown_272: 1984187284
       clown_370: -1881379650
+      clown_272: 1984187284
+      clown_289: 1477290016
       clown_164: -122409582
       clown_121: 969804170
       clown_166: -1923969702
@@ -9375,9 +9375,9 @@ TextureImporter:
       clown_279: -342217821
       clown_96: 1889295437
       clown_150: -1202250808
+      clown_313: -1541405120
       clown_210: 1402895577
       clown_249: 636347614
-      clown_313: -1541405120
       clown_94: 1326396331
       clown_381: -657458638
       clown_353: -154753681
