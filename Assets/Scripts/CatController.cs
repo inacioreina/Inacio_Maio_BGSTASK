@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CatController : MonoBehaviour
+public class CatController : PlayerInteractable
 {
     // Start is called before the first frame update
-    public void PetCat()
+    public override void Interact()
     {
+        base.Interact();
         Debug.Log("You pet the cat.");
     }
 }

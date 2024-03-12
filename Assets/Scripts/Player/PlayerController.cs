@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +14,6 @@ public class PlayerController : MonoBehaviour
     public List<Sprite> southSprites;
 
     List<Sprite> _lastDirectionSprites;
-    
 
     public float walkSpeed;
     public float frameRate;
@@ -23,6 +21,14 @@ public class PlayerController : MonoBehaviour
     float _idleTime;
 
     Vector2 _direction;
+
+    private void Awake() 
+    {
+        if(clothesManager.currentlyEquippedItem)
+        {
+            inventoryManager.AddItem(clothesManager.currentlyEquippedItem);
+        }
+    }
 
     void Update()
     {
