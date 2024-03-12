@@ -14,6 +14,7 @@ public enum EquipmentType
 [CreateAssetMenu(fileName = "New Clothing Item", menuName = "Inventory/Clothing Item")]
 public class ClothingItem : ScriptableObject
 {
+    // TODO: Change all these to camel case
     public string Name;
     public EquipmentType Type;
     public Sprite Icon;

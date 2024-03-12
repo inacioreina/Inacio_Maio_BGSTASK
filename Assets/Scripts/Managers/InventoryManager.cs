@@ -5,9 +5,16 @@ public class InventoryManager : MonoBehaviour
 {
     public List<ClothingItem> items = new List<ClothingItem>();
 
+    public int inventoryLimit = 24;
+
     // Add item to inventory
     public void AddItem(ClothingItem item)
     {
+        if(items.Count >= inventoryLimit)
+        {
+            return;
+        }
+        
         items.Add(item);
         // TODO: Update the UI here to reflect the addition of the item
     }
