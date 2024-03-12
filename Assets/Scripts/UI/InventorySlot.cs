@@ -1,47 +1,38 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour
 {
-    public GameObject inventorySlotPrefab;
-    public Transform inventorySlotsParent;
-    public PlayerController playerController;
+    public Image itemIcon;
+    public Button button;
+
+    public ClothesManager clothesManager;
+
+    private void Awake() 
+    {
+        clothesManager = FindObjectOfType<ClothesManager>();    
+    }
 
     internal void ClearItemFromSlot()
     {
-        throw new NotImplementedException();
+        Debug.Log("clearing item");
     }
 
     internal void DisplayItemInSlot(ClothingItem clothingItem)
     {
-        throw new NotImplementedException();
+        Debug.Log("displaying item in slot");
+        ClothingItem item = clothingItem;
+        itemIcon.sprite = item.Icon;
+        itemIcon.gameObject.SetActive(true);
+
     }
 
-    void Start()
+    public void OnButtonClick()
     {
-        UpdateSlotUI();
-    }                                                                                
-
-    void UpdateSlotUI()
-    {
-        // Clear existing inventory slots
-        foreach (Transform child in inventorySlotsParent)
-        {
-            Destroy(child.gameObject);
-        }
-
-        // Instantiate inventory slots for each item in the player's inventory
-        foreach (ClothingItem item in playerController.inventoryManager.items)
-        {
-            GameObject slot = Instantiate(inventorySlotPrefab, inventorySlotsParent);
-            Image slotImage = slot.GetComponent<Image>();
-            if (slotImage != null)
-            {
-                slotImage.sprite = item.Icon;
-            }
-        }
+        Debug.Log("Button clicked");
     }
 }

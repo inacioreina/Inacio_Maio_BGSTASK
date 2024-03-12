@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Shirt
   Type: 2
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: 548675794, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
   Price: 5
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  ModulateColour: 0
+  Colour: {r: 0, g: 0, b: 0, a: 0}
   NorthSprites:
   - {fileID: 94307388, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}
   - {fileID: -272596126, guid: 83003f081f97fca4a8d51d5a19c2bf7e, type: 3}

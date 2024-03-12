@@ -18,7 +18,7 @@ public class ClothingItem : ScriptableObject
     public string Name;
     public EquipmentType Type;
     public Sprite Icon;
-    public Sprite EquippedCharacterSprite;
+    //public Sprite EquippedCharacterSprite;
     public float Price;
     public bool ModulateColour;
     public Color Colour;

@@ -8,29 +8,23 @@ public class ClothesManager : MonoBehaviour
 
     public ClothingItem currentlyEquippedItem;
 
-    public float frameRate; 
+    public float frameRate;
     float _idleTime;
 
     Vector2 _direction;
 
-    private void Start() 
+    private void Start()
     {
-        //Set the sprite to the first sprite in the list facing south by default so the playere does not spawn in naked
-        spriteRenderer.sprite = currentlyEquippedItem.SouthSprites[0];
-        if (currentlyEquippedItem.ModulateColour)
-        {
-            spriteRenderer.color = currentlyEquippedItem.Colour;
-        }
-        
+        EquipItemFirstFrame();
     }
 
     public void SetSprite()
     {
         List<Sprite> directionSprites = SetDirectionSprites();
 
-        if(directionSprites != null)
+        if (directionSprites != null)
         {
-            
+
             float playTime = Time.time - _idleTime; //time since we started walking
             int totalFrames = (int)(playTime * frameRate); //total frames since we started  
             int frame = totalFrames % directionSprites.Count; //current frame we are on
@@ -39,7 +33,7 @@ public class ClothesManager : MonoBehaviour
 
             //Save the last direction sprites so that we know which sprite to reset to when the player stops walking
             _lastDirectionSprites = directionSprites;
-            
+
         }
         else
         {
@@ -72,7 +66,7 @@ public class ClothesManager : MonoBehaviour
     {
         List<Sprite> sprites = null;
 
-        if(_direction.y > 0)
+        if (_direction.y > 0)
         {
             sprites = currentlyEquippedItem.NorthSprites;
         }
@@ -92,5 +86,31 @@ public class ClothesManager : MonoBehaviour
     {
         _direction = dir;
     }
+
+    public void EquipItemFirstFrame()
+    {
+        if (currentlyEquippedItem)
+        {
+            spriteRenderer.sprite = currentlyEquippedItem.SouthSprites[0];
+            if (currentlyEquippedItem.ModulateColour)
+            {
+                spriteRenderer.color = currentlyEquippedItem.Colour;
+            }
+        }
+    }
+
+    public void EquipItem(ClothingItem item)
+    {
+        if (currentlyEquippedItem == item)
+        {
+            currentlyEquippedItem = null;
+            spriteRenderer.sprite = null;
+            return;
+        }
+
+        currentlyEquippedItem = item;
+        EquipItemFirstFrame();
+    }
+
 }
 

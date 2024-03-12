@@ -5,7 +5,7 @@ public class InventoryManager : MonoBehaviour
 {
     public List<ClothingItem> items = new List<ClothingItem>();
 
-    public int inventoryLimit = 24;
+    public int inventoryLimit = 32;
 
     // Add item to inventory
     public void AddItem(ClothingItem item)
