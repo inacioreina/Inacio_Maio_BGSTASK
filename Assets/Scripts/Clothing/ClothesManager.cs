@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class ClothesManager : MonoBehaviour
 {
-    public SpriteRenderer SpriteRenderer;
-    List<Sprite> lastDirectionSprites;
+    public SpriteRenderer spriteRenderer;
+    List<Sprite> _lastDirectionSprites;
 
     public ClothingItem currentlyEquippedItem;
 
-    public float FrameRate; 
-    float idleTime;
+    public float frameRate; 
+    float _idleTime;
 
-    Vector2 direction;
+    Vector2 _direction;
 
     private void Start() 
     {
         //Set the sprite to the first sprite in the list facing south by default so the playere does not spawn in naked
-        SpriteRenderer.sprite = currentlyEquippedItem.SouthSprites[0];
+        spriteRenderer.sprite = currentlyEquippedItem.SouthSprites[0];
         if (currentlyEquippedItem.ModulateColour)
         {
-            SpriteRenderer.color = currentlyEquippedItem.Colour;
+            spriteRenderer.color = currentlyEquippedItem.Colour;
         }
         
     }
@@ -32,25 +32,25 @@ public class ClothesManager : MonoBehaviour
         if(directionSprites != null)
         {
             
-            float playTime = Time.time - idleTime; //time since we started walking
-            int totalFrames = (int)(playTime * FrameRate); //total frames since we started  
+            float playTime = Time.time - _idleTime; //time since we started walking
+            int totalFrames = (int)(playTime * frameRate); //total frames since we started  
             int frame = totalFrames % directionSprites.Count; //current frame we are on
 
-            SpriteRenderer.sprite = directionSprites[frame];
+            spriteRenderer.sprite = directionSprites[frame];
 
             //Save the last direction sprites so that we know which sprite to reset to when the player stops walking
-            lastDirectionSprites = directionSprites;
+            _lastDirectionSprites = directionSprites;
             
         }
         else
         {
-            if (lastDirectionSprites != null)
+            if (_lastDirectionSprites != null)
             {
                 //we are not walking
                 //Debug.Log("we are not walking");
                 //Reset the sprite to the first sprite when the player stops walking so it doesn't stop mid animation
-                SpriteRenderer.sprite = lastDirectionSprites[0];
-                idleTime = Time.time;
+                spriteRenderer.sprite = _lastDirectionSprites[0];
+                _idleTime = Time.time;
             }
         }
     }
@@ -58,13 +58,13 @@ public class ClothesManager : MonoBehaviour
     //Flip the sprite depending on which direction the player is moving based on the X axis
     public void FlipSprite()
     {
-        if (!SpriteRenderer.flipX && direction.x < 0)
+        if (!spriteRenderer.flipX && _direction.x < 0)
         {
-            SpriteRenderer.flipX = true;
+            spriteRenderer.flipX = true;
         }
-        else if (SpriteRenderer.flipX && direction.x > 0)
+        else if (spriteRenderer.flipX && _direction.x > 0)
         {
-            SpriteRenderer.flipX = false;
+            spriteRenderer.flipX = false;
         }
     }
 
@@ -73,15 +73,15 @@ public class ClothesManager : MonoBehaviour
     {
         List<Sprite> sprites = null;
 
-        if(direction.y > 0)
+        if(_direction.y > 0)
         {
             sprites = currentlyEquippedItem.NorthSprites;
         }
-        else if (direction.y < 0)
+        else if (_direction.y < 0)
         {
             sprites = currentlyEquippedItem.SouthSprites;
         }
-        else if (Mathf.Abs(direction.x) > 0)
+        else if (Mathf.Abs(_direction.x) > 0)
         {
             sprites = currentlyEquippedItem.EastSprites;
         }
@@ -91,7 +91,7 @@ public class ClothesManager : MonoBehaviour
 
     public void UpdateDir(Vector2 dir)
     {
-        direction = dir;
+        _direction = dir;
     }
 }
 

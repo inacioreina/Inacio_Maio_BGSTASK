@@ -4,41 +4,42 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody2D Body;
-    public SpriteRenderer SpriteRenderer;
+    public Rigidbody2D body;
+    public SpriteRenderer spriteRenderer;
 
-    public ClothesManager ClothesManager;
+    public ClothesManager clothesManager;
+    public InventoryManager inventoryManager;
 
-    public List<Sprite> NorthSprites;
-    public List<Sprite> EastSprites;
-    public List<Sprite> SouthSprites;
+    public List<Sprite> northSprites;
+    public List<Sprite> eastSprites;
+    public List<Sprite> southSprites;
 
-    List<Sprite> lastDirectionSprites;
+    List<Sprite> _lastDirectionSprites;
     
 
-    public float WalkSpeed;
-    public float FrameRate;
+    public float walkSpeed;
+    public float frameRate;
 
-    float idleTime;
+    float _idleTime;
 
-    Vector2 direction;
+    Vector2 _direction;
 
     void Update()
     {
-        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        ClothesManager.UpdateDir(direction);
+        _direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        clothesManager.UpdateDir(_direction);
 
-        Body.velocity = direction * WalkSpeed;
+        body.velocity = _direction * walkSpeed;
         
         FlipSprite();
         
         SetSprite();
         
 
-        if(ClothesManager != null)
+        if(clothesManager != null)
         {
-            ClothesManager.FlipSprite();
-            ClothesManager.SetSprite();
+            clothesManager.FlipSprite();
+            clothesManager.SetSprite();
         }
         
     }
@@ -51,25 +52,25 @@ public class PlayerController : MonoBehaviour
         if(directionSprites != null)
         {
             
-            float playTime = Time.time - idleTime; //time since we started walking
-            int totalFrames = (int)(playTime * FrameRate); //total frames since we started  
+            float playTime = Time.time - _idleTime; //time since we started walking
+            int totalFrames = (int)(playTime * frameRate); //total frames since we started  
             int frame = totalFrames % directionSprites.Count; //current frame we are on
 
-            SpriteRenderer.sprite = directionSprites[frame];
+            spriteRenderer.sprite = directionSprites[frame];
 
             //Save the last direction sprites so that we know which sprite to reset to when the player stops walking
-            lastDirectionSprites = directionSprites;
+            _lastDirectionSprites = directionSprites;
             
         }
         else
         {
-            if (lastDirectionSprites != null)
+            if (_lastDirectionSprites != null)
             {
                 //we are not walking
                 //Debug.Log("we are not walking");
                 //Reset the sprite to the first sprite when the player stops walking so it doesn't stop mid animation
-                SpriteRenderer.sprite = lastDirectionSprites[0];
-                idleTime = Time.time;
+                spriteRenderer.sprite = _lastDirectionSprites[0];
+                _idleTime = Time.time;
             }
         }
     }
@@ -77,13 +78,13 @@ public class PlayerController : MonoBehaviour
     //Flip the sprite depending on which direction the player is moving based on the X axis
     void FlipSprite()
     {
-        if (!SpriteRenderer.flipX && direction.x < 0)
+        if (!spriteRenderer.flipX && _direction.x < 0)
         {
-            SpriteRenderer.flipX = true;
+            spriteRenderer.flipX = true;
         }
-        else if (SpriteRenderer.flipX && direction.x > 0)
+        else if (spriteRenderer.flipX && _direction.x > 0)
         {
-            SpriteRenderer.flipX = false;
+            spriteRenderer.flipX = false;
         }
     }
 
@@ -92,17 +93,17 @@ public class PlayerController : MonoBehaviour
     {
         List<Sprite> sprites = null;
 
-        if(direction.y > 0)
+        if(_direction.y > 0)
         {
-            sprites = NorthSprites;
+            sprites = northSprites;
         }
-        else if (direction.y < 0)
+        else if (_direction.y < 0)
         {
-            sprites = SouthSprites;
+            sprites = southSprites;
         }
-        else if (Mathf.Abs(direction.x) > 0)
+        else if (Mathf.Abs(_direction.x) > 0)
         {
-            sprites = EastSprites;
+            sprites = eastSprites;
         }
 
         return sprites;

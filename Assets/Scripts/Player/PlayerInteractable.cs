@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class PlayerInteractable : MonoBehaviour
 {
-    public float InteractRange = 3.3f;
-    GameObject player;
+    public float interactRange = 3.3f;
+    GameObject _player;
 
     private void Awake()
     {
         //Assign the player to the player variable on Awake
-        player = GameObject.FindGameObjectWithTag("Player");
+        _player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -19,11 +19,11 @@ public class PlayerInteractable : MonoBehaviour
             //Debug.Log(LayerMask.GetMask("Interactable") Layer mask int for the interactables is 8 so I will be using that instead of using get mask everytime
             //Collider2D collider = Physics2D.OverlapBox(player.transform.position, new Vector2(InteractRange, InteractRange), 0, 8);
 
-            if (!player)
+            if (!_player)
             {
-                player = GameObject.FindGameObjectWithTag("Player");
+                _player = GameObject.FindGameObjectWithTag("Player");
             }
-            else if (player && Vector2.Distance(player.transform.position, transform.position) < InteractRange)
+            else if (_player && Vector2.Distance(_player.transform.position, transform.position) < interactRange)
             {
                 Interact();
             }
