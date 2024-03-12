@@ -10,6 +10,8 @@ public class InventorySlot : MonoBehaviour
     public Image itemIcon;
     public Button button;
 
+    public ClothingItem item;
+
     public ClothesManager clothesManager;
 
     private void Awake() 
@@ -25,7 +27,7 @@ public class InventorySlot : MonoBehaviour
     internal void DisplayItemInSlot(ClothingItem clothingItem)
     {
         Debug.Log("displaying item in slot");
-        ClothingItem item = clothingItem;
+        item = clothingItem;
         itemIcon.sprite = item.Icon;
         itemIcon.gameObject.SetActive(true);
 
@@ -34,5 +36,6 @@ public class InventorySlot : MonoBehaviour
     public void OnButtonClick()
     {
         Debug.Log("Button clicked");
+        clothesManager.EquipItem(item);
     }
 }

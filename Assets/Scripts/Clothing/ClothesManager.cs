@@ -20,30 +20,33 @@ public class ClothesManager : MonoBehaviour
 
     public void SetSprite()
     {
-        List<Sprite> directionSprites = SetDirectionSprites();
-
-        if (directionSprites != null)
+        if (currentlyEquippedItem)
         {
+            List<Sprite> directionSprites = SetDirectionSprites();
 
-            float playTime = Time.time - _idleTime; //time since we started walking
-            int totalFrames = (int)(playTime * frameRate); //total frames since we started  
-            int frame = totalFrames % directionSprites.Count; //current frame we are on
-
-            spriteRenderer.sprite = directionSprites[frame];
-
-            //Save the last direction sprites so that we know which sprite to reset to when the player stops walking
-            _lastDirectionSprites = directionSprites;
-
-        }
-        else
-        {
-            if (_lastDirectionSprites != null)
+            if (directionSprites != null)
             {
-                //we are not walking
-                //Debug.Log("we are not walking");
-                //Reset the sprite to the first sprite when the player stops walking so it doesn't stop mid animation
-                spriteRenderer.sprite = _lastDirectionSprites[0];
-                _idleTime = Time.time;
+
+                float playTime = Time.time - _idleTime; //time since we started walking
+                int totalFrames = (int)(playTime * frameRate); //total frames since we started  
+                int frame = totalFrames % directionSprites.Count; //current frame we are on
+
+                spriteRenderer.sprite = directionSprites[frame];
+
+                //Save the last direction sprites so that we know which sprite to reset to when the player stops walking
+                _lastDirectionSprites = directionSprites;
+
+            }
+            else
+            {
+                if (_lastDirectionSprites != null)
+                {
+                    //we are not walking
+                    //Debug.Log("we are not walking");
+                    //Reset the sprite to the first sprite when the player stops walking so it doesn't stop mid animation
+                    spriteRenderer.sprite = _lastDirectionSprites[0];
+                    _idleTime = Time.time;
+                }
             }
         }
     }
