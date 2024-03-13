@@ -32,8 +32,11 @@ public class PlayerController : MonoBehaviour
             FlipSprite();
             SetSprite();
         }
-        
-        
+
+        if(Input.GetButtonDown("Quit"))
+        {
+            Application.Quit();
+        }
         
         if(clothesManager != null)
         {

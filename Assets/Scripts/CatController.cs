@@ -6,9 +6,9 @@ public class CatController : PlayerInteractable
     public InventoryManager playerInventoryManager;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
+    public AudioSource coinAudio;
     
     private bool _isCoroutineRunning = false;
-    
 
     // Start is called before the first frame update
     public override void Interact()
@@ -25,6 +25,11 @@ public class CatController : PlayerInteractable
         if(playerInventoryManager)
         {
             playerInventoryManager.gold += 33;
+
+            if(coinAudio)
+            {
+                coinAudio.Play();
+            }
         }
 
     }
