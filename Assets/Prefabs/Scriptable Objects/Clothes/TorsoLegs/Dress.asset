@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eaaee2df4d6b9448afcb1511aea646f, type: 3}
   m_Name: Dress
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Dress
   Type: 1
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
-  Price: 0
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  Icon: {fileID: -655022117, guid: ec3ca9be0d69e2b44bb7beab5c64d08f, type: 3}
+  Price: 5
+  ModulateColour: 0
+  Colour: {r: 0.2971698, g: 0.50965464, b: 1, a: 0}
   NorthSprites: []
   EastSprites: []
   SouthSprites: []

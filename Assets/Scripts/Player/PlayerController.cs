@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     public ClothesManager clothesManager;
-    public InventoryManager inventoryManager;
 
     public List<Sprite> northSprites;
     public List<Sprite> eastSprites;
@@ -20,30 +19,25 @@ public class PlayerController : MonoBehaviour
 
     float _idleTime;
 
-    Vector2 _direction;
+    bool _canMove = true;
 
-    private void Awake() 
-    {
-        if(clothesManager.currentlyEquippedItem)
-        {
-            inventoryManager.AddItem(clothesManager.currentlyEquippedItem);
-        }
-    }
+    Vector2 _direction;
 
     void Update()
     {
-        _direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        clothesManager.UpdateDir(_direction);
-
-        body.velocity = _direction * walkSpeed;
+        if(_canMove)
+        {
+            _direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+            body.velocity = _direction * walkSpeed;
+            FlipSprite();
+            SetSprite();
+        }
         
-        FlipSprite();
         
-        SetSprite();
         
-
         if(clothesManager != null)
         {
+            clothesManager.UpdateDir(_direction);
             clothesManager.FlipSprite();
             clothesManager.SetSprite();
         }
@@ -113,6 +107,13 @@ public class PlayerController : MonoBehaviour
         }
 
         return sprites;
+    }
+
+    public void ToggleCanMove()
+    {
+        _canMove = !_canMove;
+        _direction = Vector2.zero;
+        body.velocity = Vector2.zero;
     }
 }
 

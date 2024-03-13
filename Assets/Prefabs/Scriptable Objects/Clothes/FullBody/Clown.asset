@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Clown Outfit
   Type: 0
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: -965167243, guid: 092b82820ad10ac47b0d6b01b9f12ae0, type: 3}
   Price: 25
   ModulateColour: 0
   Colour: {r: 0, g: 0, b: 0, a: 0}

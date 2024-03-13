@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerInteractable : MonoBehaviour
 {
     public float interactRange = 2.3f;
-    GameObject _player;
+    internal GameObject _player;
 
     GameObject _displayInteractionKeySprite;
 
@@ -60,7 +60,7 @@ public class PlayerInteractable : MonoBehaviour
             {
                 _displayInteractionKeySprite.SetActive(true);
 
-                if (Input.GetKeyDown(KeyCode.E) | Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.E))
                     {
                         Interact();
                     }

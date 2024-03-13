@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sailor Moon
   Type: 2
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: 1110520900, guid: 4948011036811a449abceedd25a9ad43, type: 3}
   Price: 65
   ModulateColour: 0
   Colour: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 0}

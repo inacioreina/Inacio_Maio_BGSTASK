@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Skull
   Type: 2
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: 2056729026, guid: 6d3d1d6fc9670234596de55d25124cba, type: 3}
   Price: 45
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  ModulateColour: 0
+  Colour: {r: 0, g: 0, b: 0, a: 0}
   NorthSprites:
   - {fileID: 980728323, guid: 6d3d1d6fc9670234596de55d25124cba, type: 3}
   - {fileID: 705188457, guid: 6d3d1d6fc9670234596de55d25124cba, type: 3}

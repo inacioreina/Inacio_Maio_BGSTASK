@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    public bool IsToggledWithInput = true;
+
     public InventorySlot[] inventorySlots;
 
     public InventoryManager inventoryManager;
+
+    public TextMeshProUGUI goldText;
 
     public GameObject UI_Inventory;
     public Transform UISlotsParent;
@@ -16,7 +21,7 @@ public class UIManager : MonoBehaviour
         UpdateUI();
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
         for (int i = 0; i < inventorySlots.Length; i++)
         {
@@ -29,18 +34,28 @@ public class UIManager : MonoBehaviour
                 inventorySlots[i].ClearItemFromSlot();
             }
         }
+
+        if (goldText)
+        {
+            goldText.text = "Gold: " + inventoryManager.gold;
+        }
     }
     void Update()
     {
-        ShowUI();
+        if (Input.GetButtonDown("Inventory") && IsToggledWithInput)
+        {
+            ToggleUI();
+        }
     }
 
-    void ShowUI()
+    public void ToggleUI()
     {
-        if (Input.GetButtonDown("Inventory"))
-        {
-            UI_Inventory.SetActive(!UI_Inventory.activeInHierarchy);
-        }
+        UI_Inventory.SetActive(!UI_Inventory.activeInHierarchy);
+    }
+
+    public void SetUIActive(bool active)
+    {
+        UI_Inventory.SetActive(active);
     }
 }
 

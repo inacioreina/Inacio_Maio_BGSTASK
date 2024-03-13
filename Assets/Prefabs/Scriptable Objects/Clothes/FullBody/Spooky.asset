@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Spooky
   Type: 0
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: 1149173403, guid: 20ef8bd311838dd448278be275d70909, type: 3}
   Price: 666
   ModulateColour: 0
   Colour: {r: 0, g: 0, b: 0, a: 0}

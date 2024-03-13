@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Noita
   Type: 0
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: -734369409, guid: 08e84bc3aebf81545abbc455998fa40a, type: 3}
   Price: 95
   ModulateColour: 0
   Colour: {r: 0, g: 0, b: 0, a: 0}

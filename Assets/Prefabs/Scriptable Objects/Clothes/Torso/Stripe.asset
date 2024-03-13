@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Stripes
   Type: 2
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: -595474037, guid: 64dd330889ed86e49a022ff25fce86c5, type: 3}
   Price: 10
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  ModulateColour: 0
+  Colour: {r: 1, g: 0.3726415, b: 0.3726415, a: 0}
   NorthSprites:
   - {fileID: 227309284, guid: 64dd330889ed86e49a022ff25fce86c5, type: 3}
   - {fileID: 1451442376, guid: 64dd330889ed86e49a022ff25fce86c5, type: 3}

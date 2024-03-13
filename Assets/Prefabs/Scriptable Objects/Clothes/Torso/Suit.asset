@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Suit
   Type: 2
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: -798941315, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
   Price: 100
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  ModulateColour: 0
+  Colour: {r: 0, g: 0, b: 0, a: 0}
   NorthSprites:
   - {fileID: -1298856764, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}
   - {fileID: 1747026963, guid: 5b775f0b0003bde439bee1b9aab2b251, type: 3}

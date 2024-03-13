@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Floral
   Type: 2
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: 264062100, guid: 59eefa20ebcd3a74b8c8ce8f9359265c, type: 3}
   Price: 35
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  ModulateColour: 0
+  Colour: {r: 0, g: 0, b: 0, a: 0}
   NorthSprites:
   - {fileID: -2140897837, guid: 59eefa20ebcd3a74b8c8ce8f9359265c, type: 3}
   - {fileID: -932821820, guid: 59eefa20ebcd3a74b8c8ce8f9359265c, type: 3}

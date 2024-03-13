@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: "Ab\xF3bora"
   Type: 1
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: 187235807, guid: bc7ea5211cc5ee64983c8e1cc39e5d67, type: 3}
   Price: 55
   ModulateColour: 0
   Colour: {r: 0, g: 0, b: 0, a: 0}

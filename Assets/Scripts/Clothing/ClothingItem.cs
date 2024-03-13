@@ -19,7 +19,7 @@ public class ClothingItem : ScriptableObject
     public EquipmentType Type;
     public Sprite Icon;
     //public Sprite EquippedCharacterSprite;
-    public float Price;
+    public int Price;
     public bool ModulateColour;
     public Color Colour;
 
@@ -27,14 +27,4 @@ public class ClothingItem : ScriptableObject
     public List<Sprite> EastSprites;
     public List<Sprite> SouthSprites;
     
-    // Method to equip the clothing item
-    public void Equip()
-    {
-        // Implement equip logic here
-    }
-
-    public void Unequip()
-    {
-
-    }
 }

@@ -6,12 +6,29 @@ public class ClothesManager : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     List<Sprite> _lastDirectionSprites;
 
+    public InventoryManager inventoryManager;
+    public InventoryManager shopInventoryManager;
+
     public ClothingItem currentlyEquippedItem;
 
     public float frameRate;
     float _idleTime;
 
     Vector2 _direction;
+    Vector2 _lastDirection;
+
+    private void Awake()
+    {
+        if (currentlyEquippedItem)
+        {
+            inventoryManager.AddItem(currentlyEquippedItem);
+        }
+    }
+
+    //private void Update() 
+    //{
+    //    EquipItemFirstFrame();
+    //}
 
     private void Start()
     {
@@ -34,19 +51,14 @@ public class ClothesManager : MonoBehaviour
                 spriteRenderer.sprite = directionSprites[frame];
 
                 //Save the last direction sprites so that we know which sprite to reset to when the player stops walking
-                _lastDirectionSprites = directionSprites;
+                //_lastDirectionSprites = directionSprites;
+                _lastDirection = _direction;
 
             }
             else
-            {
-                if (_lastDirectionSprites != null)
-                {
-                    //we are not walking
-                    //Debug.Log("we are not walking");
-                    //Reset the sprite to the first sprite when the player stops walking so it doesn't stop mid animation
-                    spriteRenderer.sprite = _lastDirectionSprites[0];
-                    _idleTime = Time.time;
-                }
+            {   
+                EquipItemFirstFrame();
+                _idleTime = Time.time;
             }
         }
     }
@@ -94,10 +106,21 @@ public class ClothesManager : MonoBehaviour
     {
         if (currentlyEquippedItem)
         {
-            spriteRenderer.sprite = currentlyEquippedItem.SouthSprites[0];
-            if (currentlyEquippedItem.ModulateColour)
+            if (_lastDirection.y > 0)
             {
-                spriteRenderer.color = currentlyEquippedItem.Colour;
+                spriteRenderer.sprite = currentlyEquippedItem.NorthSprites[0];
+            }
+            else if (_lastDirection.y < 0)
+            {
+                spriteRenderer.sprite = currentlyEquippedItem.SouthSprites[0];
+            }
+            else if (Mathf.Abs(_lastDirection.x) > 0)
+            {
+                spriteRenderer.sprite = currentlyEquippedItem.EastSprites[0];
+            }
+            else if (_lastDirection == Vector2.zero)
+            {
+                spriteRenderer.sprite = currentlyEquippedItem.SouthSprites[0];
             }
         }
     }
@@ -106,13 +129,49 @@ public class ClothesManager : MonoBehaviour
     {
         if (currentlyEquippedItem == item)
         {
+            Debug.Log("Item is already equipped, unequipping...");
             currentlyEquippedItem = null;
             spriteRenderer.sprite = null;
-            return;
+        }
+        else
+        {
+            currentlyEquippedItem = item;
+            //spriteRenderer.sprite = currentlyEquippedItem.SouthSprites[0];
+
         }
 
-        currentlyEquippedItem = item;
         EquipItemFirstFrame();
+
+    }
+
+    public void BuyItem(ClothingItem item)
+    {
+        if (inventoryManager.gold > item.Price)
+        {
+            inventoryManager.gold -= item.Price;
+            shopInventoryManager.gold += item.Price;
+            inventoryManager.AddItem(item);
+            shopInventoryManager.RemoveItem(item);
+        }
+    }
+
+    public void SellItem(ClothingItem item)
+    {
+
+        if (shopInventoryManager.gold > item.Price)
+        {
+
+            if (currentlyEquippedItem == item)
+            {
+                currentlyEquippedItem = null;
+                spriteRenderer.sprite = null;
+            }
+
+            inventoryManager.gold += item.Price;
+            shopInventoryManager.gold -= item.Price;
+            inventoryManager.RemoveItem(item);
+            shopInventoryManager.AddItem(item);
+        }
     }
 
 }

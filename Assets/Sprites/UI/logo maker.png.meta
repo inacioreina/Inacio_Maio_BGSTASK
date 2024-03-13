@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9dfa070787fe4814f974e5b6eec46a88
+guid: d2f8fc93bd4ec64428bd3f658d276bd5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,244 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: emoticons_0
+      name: logo maker_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
+        y: 42
+        width: 149
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883fd0c7bd863c140ba8b71897594c48
+      internalID: 451851650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 119
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430e3502d9ebdc34987af0b8902f1aa6
+      internalID: -1542164235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 115
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a129fb55afa7314468f12167a8ce6910
+      internalID: 202219580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 119
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb955401fbfaf0440a2dada8863bbe06
+      internalID: -2025692188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 115
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47443c5f29d8df24bbe7cc85d9c11453
+      internalID: -194886244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_5
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 117
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b658f69cb148241b7938a1be200071
+      internalID: -203102131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 112
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67053c98d0a9f8c44a52e6ce1f3265cc
+      internalID: 1588206758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_7
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 113
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84c3fcc33b4da347b418736213128fb
+      internalID: -236823088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_8
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 81
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b3f624706e1034dbbd4024dca8c1ce
+      internalID: 208841513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_9
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 102
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66052d229c396b44abd2b08c17da2f17
+      internalID: 795402108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 104
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2a50f93aa20604f9d227b585bdaff7
+      internalID: -1080679721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_11
+      rect:
+        serializedVersion: 2
+        x: 265
         y: 80
-        width: 16
-        height: 16
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +349,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3d57b2fda2132147814f56666bf597c
-      internalID: 371758255
+      spriteID: ccb91a5f7d2221f4a944cf89fddd03d4
+      internalID: 959145294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_1
+      name: logo maker_12
       rect:
         serializedVersion: 2
-        x: 16
+        x: 299
+        y: 81
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de91bc83566f6b34ab76aa2f96a044c7
+      internalID: -779417881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_13
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 83
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7198ad479f0e18b468882b721554121a
+      internalID: 1542281453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_14
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 82
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64d813889236c242b2aa1b4a7dc6645
+      internalID: -881970925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo maker_15
+      rect:
+        serializedVersion: 2
+        x: 229
         y: 80
-        width: 16
-        height: 16
+        width: 18
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +433,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7347ffeb7ca925439615ee6f59e6a2a
-      internalID: -672730713
+      spriteID: 58119d4686446934080a6dcc6336cb29
+      internalID: 1493473703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_2
+      name: logo maker_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
+        x: 357
+        y: 82
+        width: 21
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +454,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b497750fe15fa5f4cb1bcbc7b4cb3773
-      internalID: -813242522
+      spriteID: 24cbd1debcd2f874cbb2a76b076111d7
+      internalID: 2005555229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_3
+      name: logo maker_17
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
-        width: 16
-        height: 16
+        x: 164
+        y: 50
+        width: 19
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +475,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 284fc77b3cb38c14bb4197db47599401
-      internalID: 1440294866
+      spriteID: bf2084d4c65c448489e4e921a3613792
+      internalID: -224140583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_4
+      name: logo maker_18
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
-        width: 16
-        height: 16
+        x: 197
+        y: 49
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +496,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8af160c2009fb940a5aa34aa8f14a27
-      internalID: 988994916
+      spriteID: 4b1f080897aa28f4aa4196d656717678
+      internalID: -88978798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_5
+      name: logo maker_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 16
+        x: 228
+        y: 49
+        width: 19
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +517,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca885084f37665a4bb31a3170566ad4f
-      internalID: -1470459204
+      spriteID: 7b9b50d901bdcee48aca088743a77d92
+      internalID: 1094476159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_6
+      name: logo maker_20
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
+        x: 265
+        y: 52
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +538,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99f2d407b6c7cd34481ac890bc5de9bb
-      internalID: 1062972001
+      spriteID: 6bae9f74fb8d800409745fbb28181c15
+      internalID: 1523848187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_7
+      name: logo maker_21
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
+        x: 294
+        y: 53
+        width: 18
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +559,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa2c199dcd492f64985e7e3a3f74cab0
-      internalID: 1178792833
+      spriteID: 5f305db7bc752a34cb99dd7bce399596
+      internalID: 1561967642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_8
+      name: logo maker_22
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 16
+        x: 328
+        y: 50
+        width: 15
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +580,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eadd3973e07dbe4aab9bef38a67b92b
-      internalID: -2124784895
+      spriteID: b3be0f5b6b89fae40a70b363cfc4317e
+      internalID: 1598620269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_9
+      name: logo maker_23
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 16
-        height: 16
+        x: 358
+        y: 52
+        width: 20
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +601,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20139855da5fee14d9118752b27bf5f8
-      internalID: -348468875
+      spriteID: c9352d6313befd448ad96f601b27d261
+      internalID: -27637524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_10
+      name: logo maker_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 167
+        y: 19
         width: 16
-        height: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,20 +622,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4f7e899c1a0fd94d96414e7b2d09bd0
-      internalID: 497476020
+      spriteID: edb1a868336a4c44385f513a4aaed9c1
+      internalID: 393599214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_11
+      name: logo maker_25
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
+        x: 197
+        y: 20
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,20 +643,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68205b3df6ceee84290fcb3b00dc3b94
-      internalID: -976032077
+      spriteID: 2089a57f183102e41a26817d97abe23e
+      internalID: 1798922655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_12
+      name: logo maker_26
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
+        x: 230
+        y: 22
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,20 +664,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f0f17a3e8a0af74e8b2e51a7b953017
-      internalID: 757654042
+      spriteID: 5e1e3c2186da6f34bb2ee60b3c324d91
+      internalID: -2043688971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_13
+      name: logo maker_27
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
+        x: 261
+        y: 19
+        width: 20
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,20 +685,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0e248b673a4a0e42a1cc13b6e96776d
-      internalID: 342793551
+      spriteID: babc666bd6776294f93208364b8d98a5
+      internalID: 1407175477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_14
+      name: logo maker_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 16
-        height: 16
+        x: 293
+        y: 22
+        width: 19
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,20 +706,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b39222122f2093b469fd9969642d8fce
-      internalID: 1992979189
+      spriteID: 542874e08af2fa74da27b8094c4f5548
+      internalID: -1004905572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: emoticons_15
+      name: logo maker_29
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
+        x: 323
+        y: 36
+        width: 9
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,302 +727,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b35262312076d4f4f95196474e1d9e9c
-      internalID: -1788801942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_16
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7897b00436a918b47a41098f06baf963
-      internalID: 672332179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_17
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10670e4e2a3815b42bb2bcae5fe3d778
-      internalID: -209351064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_18
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 106cebd8362f2b94a859905d23927772
-      internalID: 866545118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_19
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4ba69a82a5be1c43b570db805646329
-      internalID: -1258139673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_20
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1c506d59202dba4ea47ed833a7b0397
-      internalID: -327377216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_21
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d352159c4da5a70429972a2a784db1e7
-      internalID: 1953277624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_22
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 119e216196c95d34abd4b9f27df763f3
-      internalID: 1558638417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_23
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d00bbb1072ccfb488e18c5bb807e512
-      internalID: 1940762730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_24
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5367b3fb2446784f9b9f43c8fe2b6a8
-      internalID: 2057487497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_25
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d6a65e0b4cc4ab40a0e0d515f471af1
-      internalID: -1734163778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_26
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1751aa47c3ce1246a4c9e667d164331
-      internalID: -714778415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_27
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0335ab72d200f94a8e3d8dfe60c8cfc
-      internalID: 1625759097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_28
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64f713ce077d5cb4b87570bb1e965784
-      internalID: -1313407256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: emoticons_29
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 783d3433a9e6b0b44a70185531ccd775
-      internalID: -157228218
+      spriteID: afd25a8547c2b824d90ec8a61e4ce1de
+      internalID: 1804107286
       vertices: []
       indices: 
       edges: []
@@ -744,36 +744,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      emoticons_14: 1992979189
-      emoticons_25: -1734163778
-      emoticons_21: 1953277624
-      emoticons_2: -813242522
-      emoticons_3: 1440294866
-      emoticons_15: -1788801942
-      emoticons_28: -1313407256
-      emoticons_9: -348468875
-      emoticons_18: 866545118
-      emoticons_17: -209351064
-      emoticons_11: -976032077
-      emoticons_10: 497476020
-      emoticons_1: -672730713
-      emoticons_8: -2124784895
-      emoticons_13: 342793551
-      emoticons_12: 757654042
-      emoticons_23: 1940762730
-      emoticons_4: 988994916
-      emoticons_29: -157228218
-      emoticons_16: 672332179
-      emoticons_26: -714778415
-      emoticons_5: -1470459204
-      emoticons_22: 1558638417
-      emoticons_24: 2057487497
-      emoticons_27: 1625759097
-      emoticons_19: -1258139673
-      emoticons_20: -327377216
-      emoticons_6: 1062972001
-      emoticons_0: 371758255
-      emoticons_7: 1178792833
+      logo maker_3: -2025692188
+      logo maker_6: 1588206758
+      logo maker_27: 1407175477
+      logo maker_22: 1598620269
+      logo maker_24: 393599214
+      logo maker_5: -203102131
+      logo maker_20: 1523848187
+      logo maker_8: 208841513
+      logo maker_18: -88978798
+      logo maker_12: -779417881
+      logo maker_16: 2005555229
+      logo maker_13: 1542281453
+      logo maker_15: 1493473703
+      logo maker_17: -224140583
+      logo maker_1: -1542164235
+      logo maker_10: -1080679721
+      logo maker_25: 1798922655
+      logo maker_4: -194886244
+      logo maker_23: -27637524
+      logo maker_29: 1804107286
+      logo maker_0: 451851650
+      logo maker_28: -1004905572
+      logo maker_9: 795402108
+      logo maker_21: 1561967642
+      logo maker_14: -881970925
+      logo maker_26: -2043688971
+      logo maker_2: 202219580
+      logo maker_19: 1094476159
+      logo maker_11: 959145294
+      logo maker_7: -236823088
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

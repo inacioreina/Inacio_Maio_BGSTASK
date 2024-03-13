@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sporty
   Type: 2
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: -2023470291, guid: 693a124fae2c4dc4cbe1884ba57abc98, type: 3}
   Price: 85
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  ModulateColour: 0
+  Colour: {r: 0, g: 0, b: 0, a: 0}
   NorthSprites:
   - {fileID: -1942703229, guid: 693a124fae2c4dc4cbe1884ba57abc98, type: 3}
   - {fileID: 120481416, guid: 693a124fae2c4dc4cbe1884ba57abc98, type: 3}

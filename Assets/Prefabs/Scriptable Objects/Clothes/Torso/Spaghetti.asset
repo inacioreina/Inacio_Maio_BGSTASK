@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Spaghetti
   Type: 2
-  Icon: {fileID: 0}
-  EquippedCharacterSprite: {fileID: 0}
+  Icon: {fileID: -1281016720, guid: 1fada963ceaa082479db6d6a2871c868, type: 3}
   Price: 85
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  ModulateColour: 0
+  Colour: {r: 0, g: 0, b: 0, a: 0}
   NorthSprites:
   - {fileID: 1056071648, guid: 1fada963ceaa082479db6d6a2871c868, type: 3}
   - {fileID: 99950098, guid: 1fada963ceaa082479db6d6a2871c868, type: 3}
