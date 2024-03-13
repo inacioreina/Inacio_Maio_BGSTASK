@@ -4,26 +4,17 @@
 
 ## ***Controls***:
 
- 	
-	I / Tab - Open Inventory
-  
-	E - Interaction Key
-  
-	WASD / Arrow Keys - Player Movement
-  
-	Esc - Exit Game
+- WASD / Arrow Keys - Player Movement
+- E - Interaction Key
+- I / Tab - Open Inventory
+- Esc - Exit Game
+
 
 ## ***Credits***:
- 
-  	Pixel Keyboard Keys - https://dreammix.itch.io/keyboard-keys-for-ui
-  
-  	Cozy Farm Asset Pack - https://shubibubi.itch.io/cozy-farm
-  
-  	Cozy People Asset Pack - https://shubibubi.itch.io/cozy-people
-  
-  	Cozy Interior Asset Pack - https://shubibubi.itch.io/cozy-interior
-  
-  	RPG Shop Theme - https://poltergasm.itch.io/rpg-shop-theme-music
-  
-  	8-Bit Coin Sound Effect - https://creatorassets.com/a/8-bit-coin-sound-effects
-  
+
+- Pixel Keyboard Keys (https://dreammix.itch.io/keyboard-keys-for-ui)
+- Cozy Farm Asset Pack (https://itch.io/game-assets/tag-farming)
+- Cozy People Asset Pack (https://itch.io/game-assets/tag-people)
+- Cozy Interior Asset Pack (https://shubibubi.itch.io/cozy-interior)
+- RPG Shop Theme - Music by Poltergasm (https://itch.io/game-assets/tag-rpg-music)
+- 8-Bit Coin Sound Effect (https://creatorassets.com/a/button-sound-effects)
