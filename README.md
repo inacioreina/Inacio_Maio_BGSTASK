@@ -1,6 +1,6 @@
 # **Unity Programmer Task for Blue Gravity Studios**
 
-
+Final goal of creating a functional Clothes Shop reminiscent of 'The Sims' and 'Stardew Valley.
 
 ## ***Controls***:
 
