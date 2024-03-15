@@ -44,7 +44,7 @@ public class PlayerInteractable : MonoBehaviour
         _displayInteractionKeySprite.transform.SetParent(transform);
 
         SpriteRenderer spriteRenderer = _displayInteractionKeySprite.AddComponent<SpriteRenderer>();
-        spriteRenderer.sortingOrder = 1;
+        spriteRenderer.sortingOrder = 3;
 
         spriteRenderer.sprite = spriteUI;
 

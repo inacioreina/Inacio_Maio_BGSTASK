@@ -31,6 +31,9 @@ public class ClothesManager : MonoBehaviour
             Debug.Log("Item is already equipped, unequipping...");
             currentlyEquippedItem = null;
             spriteRenderer.sprite = null;
+            animationManager.spriteSheets.northSprites = null;
+            animationManager.spriteSheets.eastSprites = null;
+            animationManager.spriteSheets.southSprites = null;
         }
         else
         {
