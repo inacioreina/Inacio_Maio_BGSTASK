@@ -1743,7 +1743,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142194676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.000000007450581, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4433,6 +4433,8 @@ GameObject:
   - component: {fileID: 241538612}
   - component: {fileID: 241538613}
   - component: {fileID: 241538614}
+  - component: {fileID: 241538617}
+  - component: {fileID: 241538616}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -4545,35 +4547,13 @@ MonoBehaviour:
   body: {fileID: 241538611}
   spriteRenderer: {fileID: 241538608}
   clothesManager: {fileID: 241538613}
-  northSprites:
-  - {fileID: 198541999, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -312124737, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -800657271, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 2072065406, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 1598309252, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 867788999, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 1603720966, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -1542957184, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  eastSprites:
-  - {fileID: -236145665, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 1072403471, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -1814301865, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -846772624, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -1535998313, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 1491536566, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 1993298194, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -50142980, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  southSprites:
-  - {fileID: 1839796702, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 1640330590, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 2110286688, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -1526415745, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 1497583014, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 1798797141, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: -424494748, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
-  - {fileID: 2049011120, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+  bodyAnimation: {fileID: 241538617}
+  clothesAnimation: {fileID: 241538616}
+  spriteSheet:
+    northSprites: []
+    eastSprites: []
+    southSprites: []
   walkSpeed: 3
-  frameRate: 8
 --- !u!114 &241538613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4590,7 +4570,7 @@ MonoBehaviour:
   inventoryManager: {fileID: 241538614}
   shopInventoryManager: {fileID: 983925405}
   currentlyEquippedItem: {fileID: 11400000, guid: 04526cb8465b758438aadfe3e7467432, type: 2}
-  frameRate: 8
+  animationManager: {fileID: 241538616}
 --- !u!114 &241538614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4622,6 +4602,66 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   m_Size: {x: 0.6, y: 1.2}
   m_Direction: 0
+--- !u!114 &241538616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241538607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1520a6dac2b18a04fa25de16957815a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 142194678}
+  frameRate: 8
+  spriteSheets:
+    northSprites: []
+    eastSprites: []
+    southSprites: []
+--- !u!114 &241538617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241538607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1520a6dac2b18a04fa25de16957815a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 241538608}
+  frameRate: 8
+  spriteSheets:
+    northSprites:
+    - {fileID: 198541999, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -312124737, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -800657271, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 2072065406, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 1598309252, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 867788999, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 1603720966, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -1542957184, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    eastSprites:
+    - {fileID: -236145665, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 1072403471, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -1814301865, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -846772624, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -1535998313, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 1491536566, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 1993298194, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -50142980, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    southSprites:
+    - {fileID: 1839796702, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 1640330590, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 2110286688, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -1526415745, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 1497583014, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 1798797141, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: -424494748, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
+    - {fileID: 2049011120, guid: 8fa3c2d5ad154d548997ff42529ea959, type: 3}
 --- !u!1001 &253826254
 PrefabInstance:
   m_ObjectHideFlags: 0
