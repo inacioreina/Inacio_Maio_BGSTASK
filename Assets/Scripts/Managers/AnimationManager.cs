@@ -15,31 +15,26 @@ public class AnimationManager : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public float frameRate;
-
+    public Rigidbody2D rb;
     public SpriteAnimations spriteSheets;
 
     float _idleTime;
 
-    PlayerController player;
+    
 
     Vector2 _direction;
     Vector2 _lastDirection = Vector2.zero;
 
-    private void Awake() 
-    {
-        player = FindObjectOfType<PlayerController>();
-    }
-
     private void Update() 
     {
-        UpdateDir(player._direction);
+        UpdateDir();
         FlipSprite();
         SetSprite();
     }
 
-    public void UpdateDir(Vector2 dir)
+    public void UpdateDir()
     {
-        _direction = dir;
+        _direction = rb.velocity.normalized;
     }
 
     private void Start()
