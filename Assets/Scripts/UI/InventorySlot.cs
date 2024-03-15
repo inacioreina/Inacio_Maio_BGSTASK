@@ -29,9 +29,12 @@ public class InventorySlot : MonoBehaviour
 
     public ClothesManager clothesManager;
 
+    PlayerController _player;
+
     private void Awake() 
     {
-        clothesManager = FindObjectOfType<ClothesManager>();    
+        _player = FindObjectOfType<PlayerController>();    
+        clothesManager = _player.clothesManager;
     }
 
     internal void ClearItemFromSlot()

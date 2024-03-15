@@ -5,9 +5,15 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D body;
     public float walkSpeed;
+    public ClothesManager clothesManager;
 
     bool _canMove = true;
     public Vector2 _direction;
+
+    private void Awake() 
+    {
+        clothesManager = GetComponent<ClothesManager>();
+    }
 
     void Update()
     {
