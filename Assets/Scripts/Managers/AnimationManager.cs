@@ -20,8 +20,22 @@ public class AnimationManager : MonoBehaviour
 
     float _idleTime;
 
+    PlayerController player;
+
     Vector2 _direction;
     Vector2 _lastDirection = Vector2.zero;
+
+    private void Awake() 
+    {
+        player = FindObjectOfType<PlayerController>();
+    }
+
+    private void Update() 
+    {
+        UpdateDir(player._direction);
+        FlipSprite();
+        SetSprite();
+    }
 
     public void UpdateDir(Vector2 dir)
     {

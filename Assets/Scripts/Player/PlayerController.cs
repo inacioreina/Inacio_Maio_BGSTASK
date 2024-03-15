@@ -4,15 +4,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D body;
-    public SpriteRenderer spriteRenderer;
-    public ClothesManager clothesManager;
-    public AnimationManager bodyAnimation;
-    public AnimationManager clothesAnimation;
-    public SpriteAnimations spriteSheet;
     public float walkSpeed;
 
     bool _canMove = true;
-    Vector2 _direction;
+    public Vector2 _direction;
 
     void Update()
     {
@@ -20,23 +15,12 @@ public class PlayerController : MonoBehaviour
         {
             _direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
             body.velocity = _direction * walkSpeed;
-            bodyAnimation.UpdateDir(_direction);
-            bodyAnimation.FlipSprite();
-            bodyAnimation.SetSprite();
         }
 
         if(Input.GetButtonDown("Quit"))
         {
             Application.Quit();
         }
-        
-        if(clothesManager != null)
-        {
-            clothesAnimation.UpdateDir(_direction);
-            clothesAnimation.FlipSprite();
-            clothesAnimation.SetSprite();
-        }
-        
     }
 
     public void ToggleCanMove()
