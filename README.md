@@ -3,7 +3,7 @@
 Final goal of creating a functional Clothes Shop reminiscent of 'The Sims' and 'Stardew Valley'.
 
 > [!IMPORTANT]
-If you're looking for the project before the deadline please take a look at the **deadline-build** branch.
+If you're looking for the project before the deadline, please take a look at the **deadline-build** branch.
 
 ## ***Controls***:
 
