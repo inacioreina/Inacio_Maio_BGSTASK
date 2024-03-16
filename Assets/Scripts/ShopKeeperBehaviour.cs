@@ -8,7 +8,7 @@ public class ShopKeeperBehaviour : PlayerInteractable
 
     public override void Interact()
     {
-        Debug.Log("help");
+        //Debug.Log("help");
         base.Interact();
         
         if(UIStoreManager)

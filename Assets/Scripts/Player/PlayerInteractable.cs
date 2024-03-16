@@ -74,6 +74,6 @@ public class PlayerInteractable : MonoBehaviour
 
     public virtual void Interact()
     {
-        Debug.Log("test");
+        //Debug.Log("test");
     }
 }

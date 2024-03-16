@@ -28,7 +28,7 @@ public class ClothesManager : MonoBehaviour
     {
         if (currentlyEquippedItem == item)
         {
-            Debug.Log("Item is already equipped, unequipping...");
+            //Debug.Log("Item is already equipped, unequipping...");
             currentlyEquippedItem = null;
             spriteRenderer.sprite = null;
             animationManager.spriteSheets.northSprites = null;

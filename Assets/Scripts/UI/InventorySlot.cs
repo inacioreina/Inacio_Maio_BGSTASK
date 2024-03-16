@@ -65,7 +65,7 @@ public class InventorySlot : MonoBehaviour
 
     public void OnButtonClick()
     {
-        Debug.Log("Button clicked");
+        //Debug.Log("Button clicked");
 
         if(!item)
         {

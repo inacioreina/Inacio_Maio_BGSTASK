@@ -116,9 +116,9 @@ GameObject:
   - component: {fileID: 72060725001989799}
   - component: {fileID: 72060725001989800}
   - component: {fileID: 72060725001989801}
-  - component: {fileID: 72060725001989802}
   - component: {fileID: 72060725001989803}
   - component: {fileID: 72060725001989798}
+  - component: {fileID: 1497892553006668547}
   m_Layer: 0
   m_Name: NPC1
   m_TagString: Untagged
@@ -229,25 +229,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 72060724468364773}
-  inventoryManager: {fileID: 72060725001989802}
+  inventoryManager: {fileID: 0}
   shopInventoryManager: {fileID: 0}
   currentlyEquippedItem: {fileID: 11400000, guid: 04526cb8465b758438aadfe3e7467432, type: 2}
   animationManager: {fileID: 72060724468364774}
---- !u!114 &72060725001989802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72060725001989805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9ece93e164867144804027574cae2a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: []
-  gold: 55
-  inventoryLimit: 20
 --- !u!114 &72060725001989803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,6 +317,21 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &1497892553006668547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72060725001989805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ece93e164867144804027574cae2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  gold: 420
+  inventoryLimit: 20
 --- !u!1 &2562590068035278397
 GameObject:
   m_ObjectHideFlags: 0

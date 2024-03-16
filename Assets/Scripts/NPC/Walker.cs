@@ -26,7 +26,7 @@ public class Walker : MonoBehaviour
 
     void WalkTo(Vector3 point)
     {
-        Debug.Log("Distance: " + Vector2.Distance(point, transform.position));
+        //Debug.Log("Distance: " + Vector2.Distance(point, transform.position));
         
         if(Vector2.Distance(point, transform.position) > 0.6f)
         {
@@ -41,7 +41,7 @@ public class Walker : MonoBehaviour
 
     void NewPoint()
     {
-        Debug.Log("New Point");
+        //Debug.Log("New Point");
         if (navPoints == null)
         {
             throw new System.NullReferenceException("navPoints is null");
@@ -51,7 +51,7 @@ public class Walker : MonoBehaviour
             throw new System.InvalidOperationException("navPoints is empty");
         }
         int randomIndex = Random.Range(0, navPoints.Count);
-        Debug.Log("New Point: " + randomIndex);
+        //Debug.Log("New Point: " + randomIndex);
         _target = navPoints[randomIndex].transform.position;
         
     }

@@ -1,6 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 [Serializable]
@@ -20,14 +20,13 @@ public class AnimationManager : MonoBehaviour
 
     float _idleTime;
 
-    
-
     Vector2 _direction;
     Vector2 _lastDirection = Vector2.zero;
 
-    private void Update() 
+    private void FixedUpdate() 
     {
         UpdateDir();
+        //Debug.Log(_direction);
         FlipSprite();
         SetSprite();
     }
@@ -58,6 +57,8 @@ public class AnimationManager : MonoBehaviour
             //Save the last direction sprites so that we know which sprite to reset to when the player stops walking
             //_lastDirectionSprites = directionSprites;
             _lastDirection = _direction;
+
+            //Debug.Log("we are walking");
         }
         else
         {
@@ -85,17 +86,26 @@ public class AnimationManager : MonoBehaviour
     {
         List<Sprite> sprites = null;
 
-        if (_direction.y > 0)
+        if (_direction == Vector2.zero)
+        {
+            sprites = null;
+            Debug.Log("null");
+        }
+        else if (_direction.y > 0)
         {
             sprites = spriteSheet.northSprites;
+            Debug.Log("y > 0");
         }
         else if (_direction.y < 0)
         {
             sprites = spriteSheet.southSprites;
+            Debug.Log("y < 0");
         }
-        else if (Mathf.Abs(_direction.x) > 0)
+        else if (Mathf.Abs(_direction.x) > .9f)
         {
+            Debug.Log("VALUE: " + Mathf.Abs(_direction.x));
             sprites = spriteSheet.eastSprites;
+            Debug.Log("x > 0");
         }
 
         return sprites;
