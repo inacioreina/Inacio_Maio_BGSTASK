@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     public void ToggleCanMove()
     {
         _canMove = !_canMove;
-        _direction = Vector2.zero;
+        //_direction = Vector2.zero;
         body.velocity = Vector2.zero;
     }
 }

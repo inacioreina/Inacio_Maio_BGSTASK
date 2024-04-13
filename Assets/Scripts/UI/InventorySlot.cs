@@ -22,11 +22,7 @@ public class InventorySlot : MonoBehaviour
     public Image itemIcon;
     public Button button;
     public TextMeshProUGUI priceText;
-
-
-
     public ClothingItem item;
-
     public ClothesManager clothesManager;
 
     PlayerController _player;
@@ -49,7 +45,7 @@ public class InventorySlot : MonoBehaviour
 
     internal void DisplayItemInSlot(ClothingItem clothingItem)
     {
-        Debug.Log("displaying item in slot");
+        //Debug.Log("displaying item in slot");
         item = clothingItem;
 
         itemIcon.sprite = item.Icon;

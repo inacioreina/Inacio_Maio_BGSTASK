@@ -14,7 +14,7 @@ public class CatController : PlayerInteractable
     public override void Interact()
     {
         base.Interact();
-        Debug.Log("You pet the cat.");
+        //Debug.Log("You pet the cat.");
 
 
         if(!_isCoroutineRunning)

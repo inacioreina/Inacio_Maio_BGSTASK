@@ -6,15 +6,14 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public bool IsToggledWithInput = true;
-
     public InventorySlot[] inventorySlots;
-
     public InventoryManager inventoryManager;
-
     public TextMeshProUGUI goldText;
-
     public GameObject UI_Inventory;
     public Transform UISlotsParent;
+    public PlayerController player;
+    public ShopKeeperBehaviour shopKeeperBehaviour;
+
     void Start()
     {
         inventorySlots = UISlotsParent.GetComponentsInChildren<InventorySlot>();
@@ -42,7 +41,7 @@ public class UIManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButtonDown("Inventory") && IsToggledWithInput)
+        if (Input.GetButtonDown("Inventory") && IsToggledWithInput && shopKeeperBehaviour.ShopUIOpen == false)
         {
             ToggleUI();
         }
@@ -51,6 +50,7 @@ public class UIManager : MonoBehaviour
     public void ToggleUI()
     {
         UI_Inventory.SetActive(!UI_Inventory.activeInHierarchy);
+        player.ToggleCanMove();
     }
 
     public void SetUIActive(bool active)

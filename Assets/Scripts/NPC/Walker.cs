@@ -1,34 +1,42 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Walker : MonoBehaviour
 {
     public Rigidbody2D body;
     public float walkSpeed;
-    public List<GameObject> navPoints;
+    public GameObject navPoints;
+    List<Transform> _navPointsList;
+
     Vector3 _target;
-    private bool _canMove = true;
+
+    int _pointIndex = 0;
+
+    bool _canMove = true;
 
     void Start()
     {
-        NewPoint();
+        navPoints.transform.parent = null;
+        _navPointsList = navPoints.GetComponentsInChildren<Transform>().ToList();
+        _navPointsList.RemoveAt(0);
+        SetTarget();
     }
 
     void Update()
     {
-        if(_canMove)
+        if (_canMove)
         {
             WalkTo(_target);
         }
-        
+
     }
 
     void WalkTo(Vector3 point)
     {
         //Debug.Log("Distance: " + Vector2.Distance(point, transform.position));
-        
-        if(Vector2.Distance(point, transform.position) > 0.6f)
+
+        if (Vector2.Distance(point, transform.position) > 0.1f)
         {
             body.velocity = (point - transform.position).normalized * walkSpeed;
         }
@@ -36,31 +44,32 @@ public class Walker : MonoBehaviour
         {
             StartCoroutine(StopAndGetNewPoint());
         }
-        
+
     }
 
     void NewPoint()
     {
-        //Debug.Log("New Point");
-        if (navPoints == null)
+        if (_pointIndex < _navPointsList.Count - 1)
         {
-            throw new System.NullReferenceException("navPoints is null");
+            _pointIndex++;
         }
-        else if (navPoints.Count == 0)
+        else
         {
-            throw new System.InvalidOperationException("navPoints is empty");
+            _pointIndex = 0;
         }
-        int randomIndex = Random.Range(0, navPoints.Count);
-        //Debug.Log("New Point: " + randomIndex);
-        _target = navPoints[randomIndex].transform.position;
-        
+        SetTarget();
+    }
+
+    void SetTarget()
+    {
+        _target = _navPointsList[_pointIndex].position;
     }
 
     private IEnumerator<object> StopAndGetNewPoint()
     {
         ToggleCanMove();
         NewPoint();
-        yield return new WaitForSeconds(Random.Range(3f, 12f));
+        yield return new WaitForSeconds(Random.Range(3f, 6f));
         ToggleCanMove();
     }
 

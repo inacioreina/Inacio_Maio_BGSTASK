@@ -22,11 +22,16 @@ public class AnimationManager : MonoBehaviour
     Vector2 _direction;
     Vector2 _lastDirection = Vector2.zero;
 
-    private void FixedUpdate() 
+    private void FixedUpdate()
     {
         UpdateDir();
         //Debug.Log(_direction);
         FlipSprite();
+        //SetSprite();
+    }
+
+    private void Update()
+    {
         SetSprite();
     }
 
@@ -85,48 +90,53 @@ public class AnimationManager : MonoBehaviour
     {
         List<Sprite> sprites = null;
 
-        if (_direction == Vector2.zero)
-        {
-            sprites = null;
-            Debug.Log("null");
-        }
-        else if (_direction.y > 0)
+
+        if (_direction.y > 0)
         {
             sprites = spriteSheet.northSprites;
-            Debug.Log("y > 0");
+            //Debug.Log("y > 0");
         }
         else if (_direction.y < 0)
         {
             sprites = spriteSheet.southSprites;
-            Debug.Log("y < 0");
+            //Debug.Log("y < 0");
         }
-        else if (Mathf.Abs(_direction.x) > .9f)
+        else if (Mathf.Abs(_direction.x) > 0)
         {
-            Debug.Log("VALUE: " + Mathf.Abs(_direction.x));
             sprites = spriteSheet.eastSprites;
-            Debug.Log("x > 0");
+            //Debug.Log("x");
         }
+        //else if (_direction == Vector2.zero)
+        //{
+        //    sprites = null;
+        //    Debug.Log("null");
+        //}
 
         return sprites;
     }
 
     public void FirstAnimationFrame(SpriteAnimations spriteSheet)
     {
-        if (_lastDirection.y > 0)
+
+        if (_lastDirection.y > 0 && spriteSheet.northSprites != null)
         {
             spriteRenderer.sprite = spriteSheet.northSprites[0];
         }
-        else if (_lastDirection.y < 0)
+        else if (_lastDirection.y < 0 && spriteSheet.southSprites != null)
         {
             spriteRenderer.sprite = spriteSheet.southSprites[0];
         }
-        else if (Mathf.Abs(_lastDirection.x) > 0)
+        else if (Mathf.Abs(_lastDirection.x) > 0 && spriteSheet.eastSprites != null)
         {
             spriteRenderer.sprite = spriteSheet.eastSprites[0];
         }
-        else if (_lastDirection == Vector2.zero)
+        else if (_lastDirection == Vector2.zero && spriteSheet.northSprites != null)
         {
-            spriteRenderer.sprite = spriteSheet.southSprites[0];
+            spriteRenderer.sprite = spriteSheet.northSprites[0];
+        }
+        else
+        {
+            spriteRenderer.sprite = null;
         }
     }
 

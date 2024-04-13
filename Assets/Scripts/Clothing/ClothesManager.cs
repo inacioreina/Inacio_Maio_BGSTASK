@@ -67,8 +67,8 @@ public class ClothesManager : MonoBehaviour
 
             if (currentlyEquippedItem == item)
             {
-                currentlyEquippedItem = null;
-                spriteRenderer.sprite = null;
+                EquipItem(item);
+                
             }
 
             inventoryManager.gold += item.Price;
