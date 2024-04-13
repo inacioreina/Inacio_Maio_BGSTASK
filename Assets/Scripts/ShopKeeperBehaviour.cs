@@ -12,7 +12,7 @@ public class ShopKeeperBehaviour : PlayerInteractable
         //Debug.Log("help");
         base.Interact();
         
-        if(UIStoreManager)
+        if(UIStoreManager && _player.GetComponent<PlayerController>().canMove || ShopUIOpen)
         {
             ShopUIOpen = !ShopUIOpen;
             UIStorePlayerManager.UpdateUI();

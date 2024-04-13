@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float walkSpeed;
     public ClothesManager clothesManager;
 
-    bool _canMove = true;
+    public bool canMove = true;
     public Vector2 _direction;
 
     private void Awake() 
@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(_canMove)
+        if(canMove)
         {
             _direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
             body.velocity = _direction * walkSpeed;
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     public void ToggleCanMove()
     {
-        _canMove = !_canMove;
+        canMove = !canMove;
         //_direction = Vector2.zero;
         body.velocity = Vector2.zero;
     }
